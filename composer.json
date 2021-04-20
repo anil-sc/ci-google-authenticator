@@ -1,0 +1,11 @@
+{
+    "description" : "The CodeIgniter Application with Composer",
+    "require": {
+        "php": "^7.0",
+        "takuya-motoshima/codeigniter-extension": "dev-master",
+        "sonata-project/google-authenticator": "^2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    }
+}
