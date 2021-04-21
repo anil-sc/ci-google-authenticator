@@ -26,8 +26,9 @@ class AuthSecretService extends \AppModel
     $secret = $this->getSecretByUid($id);
     $g = new GoogleAuthenticator();
     $isValid = $g->checkCode($secret, $code);
-    if ($isValid)
+    if (!empty($isValid)){
       return true;
+    }
 
     return false;
   }

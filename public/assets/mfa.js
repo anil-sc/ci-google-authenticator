@@ -10,11 +10,8 @@ async function checkCode(form) {
     processData: false
   });
 
-  // Authenticating code failed.
-  if (res.error) return void alert('The code is incorrect.');
-
-  // Authenticating code successful.
-  location.href = '/dashboard';
+  if(res) location.href = '/dashboard';
+  else alert('code error or reload for new key');
 }
 
 (async () => {

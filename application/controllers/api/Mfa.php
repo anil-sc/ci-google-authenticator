@@ -32,7 +32,8 @@ class Mfa extends AppController {
       }
       // Authenticate MFA code
       $secret = $this->AuthSecretService->checkCode($_SESSION[SESSION_NAME]['id'],$this->input->post('mfa'));
-      parent::set($secret)::json();
+
+      parent::set($secret ? true : false)::json();
     } catch (\Throwable $e) {
       Logger::error($e);
       parent::error($e->getMessage(), HTTP_BAD_REQUEST);
