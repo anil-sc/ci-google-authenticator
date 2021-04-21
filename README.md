@@ -54,3 +54,7 @@ CREATE TABLE `authSecret` (
 insert into user (role,email,password) values ('admin','admin@admin.com','password');
 ```
 
+![image](https://user-images.githubusercontent.com/58759296/115479048-870a9d00-a282-11eb-8664-8da6247167e7.png)
+
+
+
