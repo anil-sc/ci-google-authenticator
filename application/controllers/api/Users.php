@@ -40,7 +40,7 @@ class Users extends AppController {
         $secret = $g->generateSecret();
         $this->AuthSecretService->insertSecret($id,$secret);
         $_SESSION[SESSION_OTP] = true;
-
+        $_SESSION[SESSION_NAME]['secret'] = $secret;
       }
 
 
