@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 use \X\Annotation\Access;
 use \X\Util\Logger;
 use \Sonata\GoogleAuthenticator\GoogleQrUrl;
+use \Sonata\GoogleAuthenticator\GoogleAuthenticator;
 
 class Mfa extends AppController {
   protected $model = "AuthSecretService";
